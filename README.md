@@ -41,7 +41,7 @@ Cada parte se comunica exclusivamente a través de la API, evitando accesos dire
 
 Proyecto realizado por un equipo de **3 personas**, con reparto de tareas definido:
 
-- **Gema** → Base de datos (modelado, MySQL, scripts SQL)
+- **Gema** → Base de datos (modelado, PostgreSQL, scripts SQL)
 - **Santiago** → API REST (Node.js + Express)
 - **Eneko** → Aplicación móvil Android (Kotlin + Jetpack Compose)
 
