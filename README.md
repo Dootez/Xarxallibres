@@ -1,98 +1,76 @@
 # XarxaLlibres Lite 📚
 
-Proyecto intermodular del Ciclo Formativo de Grado Superior en  
-**Desarrollo de Aplicaciones Multiplataforma (DAM)**.
+![Status](https://img.shields.io/badge/status-in%20development-yellow)
+![Java](https://img.shields.io/badge/Java-17-blue)
+![Kotlin](https://img.shields.io/badge/Kotlin-1.9-blueviolet)
+![Android](https://img.shields.io/badge/Android-Jetpack%20Compose-brightgreen)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-blue)
+![Architecture](https://img.shields.io/badge/Architecture-Client--Server-informational)
+
+Intermodular project developed within the  
+**Higher Vocational Training Degree in Multiplatform Application Development (DAM)**.
 
 ---
 
-## 📌 Descripción del proyecto
+## 📌 Project Overview
 
-**XarxaLlibres Lite** es una aplicación multiplataforma cuyo objetivo es facilitar la
-gestión y consulta de libros de texto dentro de una comunidad educativa.
+**XarxaLlibres Lite** is a multiplatform application designed to facilitate the
+management and consultation of textbooks within an educational community.
 
-El sistema permite a los usuarios iniciar sesión, consultar un catálogo de libros,
-añadir nuevos ejemplares y visualizar información detallada de cada libro.  
-El proyecto se desarrolla siguiendo una arquitectura cliente-servidor y se divide en
-varios módulos independientes.
-
----
-
-## 🧩 Arquitectura general
-
-El proyecto está dividido en las siguientes partes:
-
-- **Base de datos (PostgreSQL)**  
-  Diseño y gestión del modelo de datos.
-
-- **API REST (Node.js + Express)**  
-  Encargada de la lógica de negocio y la comunicación con la base de datos.
-
-- **Aplicación móvil (Android)**  
-  Desarrollada en Kotlin con Jetpack Compose.
-
-- **Aplicación de escritorio (Java)**  
-  Cliente de escritorio que consume la misma API REST.
-
-Cada parte se comunica exclusivamente a través de la API, evitando accesos directos a la base de datos desde los clientes.
+The system allows users to authenticate, browse a book catalog, add new book entries,
+and view detailed information for each item.  
+The project follows a **client–server architecture** and is structured into
+independent modules to ensure scalability and maintainability.
 
 ---
 
-## 👥 Equipo de trabajo
+## 🧩 System Architecture
 
-Proyecto realizado por un equipo de **3 personas**, con reparto de tareas definido:
+The project is divided into the following components:
 
-- **Gema** → Base de datos (modelado, PostgreSQL, scripts SQL)
-- **Santiago** → API REST (Node.js + Express)
-- **Eneko** → Aplicación móvil Android (Kotlin + Jetpack Compose)
+- **Database (PostgreSQL)**  
+  Data model design and database management.
 
-La aplicación de escritorio se desarrollará de forma rotativa entre los miembros del equipo.
+- **Mobile Application (Android)**  
+  Developed in **Kotlin** using **Jetpack Compose**.
 
----
+- **Desktop Application (Java)**  
+  Desktop client acting as an administrative tool for managing the application database.
 
-## 📱 Aplicación móvil (Android)
-
-### Tecnologías utilizadas
-- Lenguaje: **Kotlin**
-- UI: **Jetpack Compose**
-- Arquitectura: **MVVM**
-- Navegación: **Navigation Compose**
-- Comunicación con API: **Retrofit** (fase posterior)
-- Gestión de estados: `State`, `remember`, `mutableStateOf`
+The database is deployed in the cloud using **Firestore Database**.
 
 ---
 
-## 🖥️ Backend / API
+## 👥 Development Team
 
-- Entorno: **Node.js**
-- Framework: **Express**
-- Tipo: **API REST**
-- Comunicación mediante JSON
-- Autenticación básica (en fases posteriores)
+This project is developed by a **3-member team**, with clearly defined responsibilities:
 
-La API será desplegada en la nube usando servicios gratuitos.
+- **Gema** → Database design and management (PostgreSQL, SQL scripts)
+- **Santiago** → Desktop application (Java + JavaFX)
+- **Eneko** → Android mobile application (Kotlin + Jetpack Compose)
 
 ---
 
-## 🗄️ Base de datos
+## 📱 Mobile Application (Android)
 
-- Sistema gestor: **PostgreSQL**
-- Diseño normalizado
-- Acceso exclusivo desde la API
-- Alojada en la nube (servicio gratuito)
-
----
-
-## 🚧 Estado del proyecto
-
-🔧 **En desarrollo**
-
-Este repositorio se actualizará progresivamente conforme avance el proyecto.
+### Technologies
+- **Language:** Kotlin  
+- **UI Framework:** Jetpack Compose  
+- **Architecture:** MVVM  
+- **Navigation:** Navigation Compose  
+- **State Management:** `State`, `remember`, `mutableStateOf`
 
 ---
 
-## 📄 Licencia
+## 🗄️ Database
 
-Proyecto desarrollado con fines educativos como parte de  
-**Proyecto Intermodular** del CFGS DAM.
+- **DBMS:** PostgreSQL  
+- **Normalized relational design**  
+- **Cloud-hosted** (free-tier service)
 
-No destinado a uso comercial.
+---
+
+## 📄 License
+
+This project has been developed for **educational purposes** as part of the  
+**Intermodular Project** of the DAM
